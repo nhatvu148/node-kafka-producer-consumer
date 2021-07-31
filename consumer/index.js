@@ -3,7 +3,7 @@ import eventType from '../eventType.js';
 
 var consumer = new Kafka.KafkaConsumer({
   'group.id': 'kafka',
-  'metadata.broker.list': 'localhost:9092',
+  'metadata.broker.list': '192.168.1.3:9092',
 }, {});
 
 consumer.connect();
